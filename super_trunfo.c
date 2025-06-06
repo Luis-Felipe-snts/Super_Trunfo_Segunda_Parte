@@ -115,11 +115,11 @@
             printf (" COMPARAÇÃO >>> Escolha o atributo de comparação entre as cartas\n");
             printf ("\n");
             printf (" 1. Nome\n");
-            printf ("2. População\n");
-            printf ("3. Área (km²)\n");
-            printf ("4. PIB\n");
-            printf ("5. Número de Pontos Turísticos\n");
-            printf ("6. Densidade Demográfica\n");
+            printf (" 2. População\n");
+            printf (" 3. Área (km²)\n");
+            printf (" 4. PIB\n");
+            printf (" 5. Número de Pontos Turísticos\n");
+            printf (" 6. Densidade Demográfica\n");
             printf ("\n");
             printf ("Atributo: ");
             scanf ("%d", &atributo);
