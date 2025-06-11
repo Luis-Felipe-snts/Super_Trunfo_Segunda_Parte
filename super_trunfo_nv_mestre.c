@@ -150,4 +150,48 @@ int main()
     }
 
     // Comparação - Atributo 3
-    printf("\nEscolha o terceiro atributo (diferente dos anterior
+    printf("\nEscolha o terceiro atributo (diferente dos anteriores):\n");
+    printf("Atributo (3): ");
+    scanf("%d", &atributo3);
+
+    if (atributo3 == atributo1 || atributo3 == atributo2) {
+        printf("Escolha um atributo diferente dos anteriores.\n");
+        return 0;
+    }
+
+    switch (atributo3) {
+        case 1:
+            resultado3 = populacao1 > populacao2;
+            break;
+        case 2:
+            resultado3 = pib1 > pib2;
+            break;
+        case 3:
+            resultado3 = densidade_populacional1 > densidade_populacional2;
+            break;
+        case 4:
+            resultado3 = area1 > area2;
+            break;
+        case 5:
+            resultado3 = num_pontos_turisticos1 > num_pontos_turisticos2;
+            break;
+        case 6:
+            printf("Saindo...\n");
+            return 0;
+        default:
+            printf("Opção inválida!\n");
+            return 0;
+    }
+
+    // Resultado final
+    int total = resultado1 + resultado2 + resultado3;
+    if (total > 1) {
+        printf("\nParabéns, CARTA 1 venceu!\n");
+    } else if (total == 1) {
+        printf("\nEmpate!\n");
+    } else {
+        printf("\nParabéns, CARTA 2 venceu!\n");
+    }
+
+    return 0;
+}
